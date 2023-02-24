@@ -1,0 +1,23 @@
+.banner{
+    background-image: url(../img/ak.jpg);
+    /*posicion arriba y al centro*/
+    background-position: top center;
+    /*cover cubre toda la imagen visible*/
+    background-size: cover;
+    padding: 25%;
+    position:relative;
+    /*z index es la profundidad(eje z)*/
+    z-index: 1;
+}
+/*after es una propiedad de css se llama con ::*/
+.banner::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: black;
+    top:0;
+    left:0;
+    opacity: 0.4;
+    z-index: -1;
+}
